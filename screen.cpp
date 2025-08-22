@@ -4,20 +4,19 @@ Screen::Screen(QWidget *parent)
     : QWidget{parent}
 {
     resize(size_screen);
+    current_action = new CreateCircleAction;
 }
 
-void Screen::addShape(IShape* shape){
+void Screen::addShape(const shared_ptr<IShape>& shape){
     shapes.push_back(shape);
-}
-
-void Screen::changeShape(IShape* shape,int position){
-    delete shapes[position];
-    shapes[position] = shape;
 }
 
 void Screen::deleteShape(int position){
     shapes.erase(shapes.begin()+position,shapes.begin()+position+1);
 }
+
+int Screen::countOfShapes(){return shapes.size();}
+
 
 void Screen::setAction(IAction* act){
     if(current_action) delete current_action;
@@ -26,6 +25,8 @@ void Screen::setAction(IAction* act){
 
 void Screen::paintEvent(QPaintEvent* pe){
     QPainter painter(this);
+    painter.fillRect(0,0,size_screen.width(),size_screen.height(),background_color);
+    painter.setPen(QPen(Qt::black,3));
     for(int i = 0;i<shapes.size();++i) shapes[i]->draw(painter);
 }
 void Screen::mousePressEvent(QMouseEvent* me){
@@ -37,4 +38,8 @@ void Screen::mouseMoveEvent(QMouseEvent* me){
 
 void Screen::mouseReleaseEvent(QMouseEvent* me){
     current_action->mouseReleaseEvent(me,this);
+}
+
+Screen::~Screen(){
+    delete current_action;
 }

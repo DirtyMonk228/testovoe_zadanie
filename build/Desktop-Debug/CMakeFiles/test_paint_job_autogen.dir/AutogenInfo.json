@@ -224,9 +224,33 @@
 			null
 		],
 		[
+			"/home/ss/cppProjects/test_paint_job/circle.h",
+			"MU",
+			"EWIEGA46WW/moc_circle.cpp",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/createcircleaction.h",
+			"MU",
+			"EWIEGA46WW/moc_createcircleaction.cpp",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/createrectangleaction.h",
+			"MU",
+			"EWIEGA46WW/moc_createrectangleaction.cpp",
+			null
+		],
+		[
 			"/home/ss/cppProjects/test_paint_job/createtriangleaction.h",
 			"MU",
 			"EWIEGA46WW/moc_createtriangleaction.cpp",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/rectangle.h",
+			"MU",
+			"EWIEGA46WW/moc_rectangle.cpp",
 			null
 		],
 		[
@@ -301,12 +325,24 @@
 	"SOURCES" : 
 	[
 		[ "/home/ss/cppProjects/test_paint_job/application.cpp", "MU", null ],
+		[ "/home/ss/cppProjects/test_paint_job/circle.cpp", "MU", null ],
+		[
+			"/home/ss/cppProjects/test_paint_job/createcircleaction.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/createrectangleaction.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/ss/cppProjects/test_paint_job/createtriangleaction.cpp",
 			"MU",
 			null
 		],
 		[ "/home/ss/cppProjects/test_paint_job/main.cpp", "MU", null ],
+		[ "/home/ss/cppProjects/test_paint_job/rectangle.cpp", "MU", null ],
 		[ "/home/ss/cppProjects/test_paint_job/screen.cpp", "MU", null ],
 		[ "/home/ss/cppProjects/test_paint_job/triangle.cpp", "MU", null ]
 	],

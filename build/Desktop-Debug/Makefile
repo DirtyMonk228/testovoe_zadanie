@@ -224,6 +224,78 @@ application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/application.cpp.s
 .PHONY : application.cpp.s
 
+circle.o: circle.cpp.o
+.PHONY : circle.o
+
+# target to build an object file
+circle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/circle.cpp.o
+.PHONY : circle.cpp.o
+
+circle.i: circle.cpp.i
+.PHONY : circle.i
+
+# target to preprocess a source file
+circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/circle.cpp.i
+.PHONY : circle.cpp.i
+
+circle.s: circle.cpp.s
+.PHONY : circle.s
+
+# target to generate assembly for a file
+circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/circle.cpp.s
+.PHONY : circle.cpp.s
+
+createcircleaction.o: createcircleaction.cpp.o
+.PHONY : createcircleaction.o
+
+# target to build an object file
+createcircleaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o
+.PHONY : createcircleaction.cpp.o
+
+createcircleaction.i: createcircleaction.cpp.i
+.PHONY : createcircleaction.i
+
+# target to preprocess a source file
+createcircleaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createcircleaction.cpp.i
+.PHONY : createcircleaction.cpp.i
+
+createcircleaction.s: createcircleaction.cpp.s
+.PHONY : createcircleaction.s
+
+# target to generate assembly for a file
+createcircleaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createcircleaction.cpp.s
+.PHONY : createcircleaction.cpp.s
+
+createrectangleaction.o: createrectangleaction.cpp.o
+.PHONY : createrectangleaction.o
+
+# target to build an object file
+createrectangleaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createrectangleaction.cpp.o
+.PHONY : createrectangleaction.cpp.o
+
+createrectangleaction.i: createrectangleaction.cpp.i
+.PHONY : createrectangleaction.i
+
+# target to preprocess a source file
+createrectangleaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createrectangleaction.cpp.i
+.PHONY : createrectangleaction.cpp.i
+
+createrectangleaction.s: createrectangleaction.cpp.s
+.PHONY : createrectangleaction.s
+
+# target to generate assembly for a file
+createrectangleaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createrectangleaction.cpp.s
+.PHONY : createrectangleaction.cpp.s
+
 createtriangleaction.o: createtriangleaction.cpp.o
 .PHONY : createtriangleaction.o
 
@@ -271,6 +343,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+rectangle.o: rectangle.cpp.o
+.PHONY : rectangle.o
+
+# target to build an object file
+rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/rectangle.cpp.o
+.PHONY : rectangle.cpp.o
+
+rectangle.i: rectangle.cpp.i
+.PHONY : rectangle.i
+
+# target to preprocess a source file
+rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/rectangle.cpp.i
+.PHONY : rectangle.cpp.i
+
+rectangle.s: rectangle.cpp.s
+.PHONY : rectangle.s
+
+# target to generate assembly for a file
+rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/rectangle.cpp.s
+.PHONY : rectangle.cpp.s
 
 screen.o: screen.cpp.o
 .PHONY : screen.o
@@ -362,12 +458,24 @@ help:
 	@echo "... application.o"
 	@echo "... application.i"
 	@echo "... application.s"
+	@echo "... circle.o"
+	@echo "... circle.i"
+	@echo "... circle.s"
+	@echo "... createcircleaction.o"
+	@echo "... createcircleaction.i"
+	@echo "... createcircleaction.s"
+	@echo "... createrectangleaction.o"
+	@echo "... createrectangleaction.i"
+	@echo "... createrectangleaction.s"
 	@echo "... createtriangleaction.o"
 	@echo "... createtriangleaction.i"
 	@echo "... createtriangleaction.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rectangle.o"
+	@echo "... rectangle.i"
+	@echo "... rectangle.s"
 	@echo "... screen.o"
 	@echo "... screen.i"
 	@echo "... screen.s"

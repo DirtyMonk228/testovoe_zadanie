@@ -2,7 +2,13 @@
   /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/moc_predefs.h \
   /home/ss/cppProjects/test_paint_job/IAction.h \
   /home/ss/cppProjects/test_paint_job/IShape.h \
+  /home/ss/cppProjects/test_paint_job/circle.h \
+  /home/ss/cppProjects/test_paint_job/createcircleaction.h \
+  /home/ss/cppProjects/test_paint_job/createrectangleaction.h \
+  /home/ss/cppProjects/test_paint_job/createtriangleaction.h \
+  /home/ss/cppProjects/test_paint_job/rectangle.h \
   /home/ss/cppProjects/test_paint_job/screen.h \
+  /home/ss/cppProjects/test_paint_job/triangle.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

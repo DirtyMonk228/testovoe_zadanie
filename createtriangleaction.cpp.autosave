@@ -1,5 +1,0 @@
-#include "createtriangleaction.h"
-
-CreateTriangleAction::CreateTriangleAction():IAction() {}
-
-void CreateTriangleAction::mousePressEvent()

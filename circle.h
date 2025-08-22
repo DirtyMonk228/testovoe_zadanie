@@ -1,16 +1,16 @@
 #pragma once
 #include"IShape.h"
 #include"QPoint"
-class Triangle:public IShape//треугольник описывается левой верхней и правой нижней точкой прямоугольника в который он вписывается
+class Circle:public IShape
 {
 public:
-    Triangle();
+    Circle();
     void draw(QPainter&) const override;
     QPoint firstPoint() const {return first_point;}
     QPoint secondPoint()const {return second_point;}
     void setFirstPoint(QPoint f){first_point = f;}
     void setSecondPoint(QPoint f){second_point = f;}
-    ~Triangle();
+    ~Circle();
 
 private:
     QPoint first_point;
@@ -18,4 +18,3 @@ private:
 
 
 };
-

@@ -2,18 +2,18 @@
 #include"IAction.h"
 #include"IShape.h"
 #include"screen.h"
-#include"triangle.h"
+#include"circle.h"
 using std::shared_ptr;
-class CreateTriangleAction:public IAction
+class CreateCircleAction:public IAction
 {
 public:
-    CreateTriangleAction();
+    CreateCircleAction();
     void mousePressEvent(QMouseEvent*,Screen*) override;
     void mouseMoveEvent(QMouseEvent*,Screen*) override;
     void mouseReleaseEvent(QMouseEvent*,Screen*) override;
 private:
-    shared_ptr<Triangle> triangle;
-    bool triangle_already_on_screen = false;
-
+    shared_ptr<Circle> circle;
+    bool circle_already_on_screen = false;
 };
+
 

@@ -365,4 +365,10 @@ CMakeFiles/test_paint_job.dir/screen.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /home/ss/cppProjects/test_paint_job/createtriangleaction.h \
+ /home/ss/cppProjects/test_paint_job/triangle.h \
+ /home/ss/cppProjects/test_paint_job/createrectangleaction.h \
+ /home/ss/cppProjects/test_paint_job/rectangle.h \
+ /home/ss/cppProjects/test_paint_job/createcircleaction.h \
+ /home/ss/cppProjects/test_paint_job/circle.h

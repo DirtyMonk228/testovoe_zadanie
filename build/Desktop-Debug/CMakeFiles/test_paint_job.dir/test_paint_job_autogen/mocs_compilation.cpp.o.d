@@ -383,4 +383,10 @@ CMakeFiles/test_paint_job.dir/test_paint_job_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/EWIEGA46WW/../../../../createtriangleaction.h \
+ /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/EWIEGA46WW/../../../../triangle.h \
+ /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/EWIEGA46WW/../../../../createrectangleaction.h \
+ /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/EWIEGA46WW/../../../../rectangle.h \
+ /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/EWIEGA46WW/../../../../createcircleaction.h \
+ /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/EWIEGA46WW/../../../../circle.h \
  /home/ss/cppProjects/test_paint_job/build/Desktop-Debug/test_paint_job_autogen/EWIEGA46WW/moc_screen.cpp

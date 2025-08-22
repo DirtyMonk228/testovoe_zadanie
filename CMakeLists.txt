@@ -29,6 +29,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         IAction.h
         createtriangleaction.h createtriangleaction.cpp
+        createrectangleaction.h createrectangleaction.cpp
+        rectangle.h rectangle.cpp
+        circle.h circle.cpp
+        createcircleaction.h createcircleaction.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
