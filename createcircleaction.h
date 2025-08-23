@@ -11,6 +11,7 @@ public:
     void mousePressEvent(QMouseEvent*,Screen*) override;
     void mouseMoveEvent(QMouseEvent*,Screen*) override;
     void mouseReleaseEvent(QMouseEvent*,Screen*) override;
+    void keyPressEvent(QKeyEvent*, Screen*) override;
 private:
     shared_ptr<Circle> circle;
     bool circle_already_on_screen = false;

@@ -383,6 +383,7 @@ CMakeFiles/test_paint_job.dir/main.cpp.o: \
  /home/ss/cppProjects/test_paint_job/rectangle.h \
  /home/ss/cppProjects/test_paint_job/createcircleaction.h \
  /home/ss/cppProjects/test_paint_job/circle.h \
+ /home/ss/cppProjects/test_paint_job/connection.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyleFactory \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstylefactory.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \

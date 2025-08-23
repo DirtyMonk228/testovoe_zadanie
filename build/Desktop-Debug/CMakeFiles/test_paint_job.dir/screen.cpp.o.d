@@ -371,4 +371,5 @@ CMakeFiles/test_paint_job.dir/screen.cpp.o: \
  /home/ss/cppProjects/test_paint_job/createrectangleaction.h \
  /home/ss/cppProjects/test_paint_job/rectangle.h \
  /home/ss/cppProjects/test_paint_job/createcircleaction.h \
- /home/ss/cppProjects/test_paint_job/circle.h
+ /home/ss/cppProjects/test_paint_job/circle.h \
+ /home/ss/cppProjects/test_paint_job/connection.h

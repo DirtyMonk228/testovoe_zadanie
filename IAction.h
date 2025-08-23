@@ -8,5 +8,6 @@ public:
     virtual void mousePressEvent(QMouseEvent*,Screen*) = 0;
     virtual void mouseMoveEvent(QMouseEvent*,Screen*) = 0;
     virtual void mouseReleaseEvent(QMouseEvent*,Screen*) = 0;
+    virtual void keyPressEvent(QKeyEvent*,Screen*) = 0;
     virtual ~IAction() = default;
 };

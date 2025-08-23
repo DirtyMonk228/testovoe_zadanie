@@ -1,11 +1,15 @@
 #include "createrectangleaction.h"
-
-CreateRectangleAction::CreateRectangleAction():IAction() {}
+#include"getFreeId.h"
+CreateRectangleAction::CreateRectangleAction():IAction() {
+    rectangle = std::make_shared<Rectangle>(get_free_id());
+}
 
 void CreateRectangleAction::mousePressEvent(QMouseEvent* me, Screen* screen){
-    rectangle = std::make_shared<Rectangle>();
+    if(me->button() == Qt::RightButton && rectangle_already_on_screen){
+        screen->deleteShape(screen->countOfShapes()-1);
+        screen->update();
+    }
     rectangle->setFirstPoint(me->position().toPoint());
-    rectangle_already_on_screen = false;
 }
 void CreateRectangleAction::mouseMoveEvent(QMouseEvent* me,Screen* screen){
     rectangle->setSecondPoint(me->position().toPoint());
@@ -17,7 +21,14 @@ void CreateRectangleAction::mouseMoveEvent(QMouseEvent* me,Screen* screen){
 }
 void CreateRectangleAction::mouseReleaseEvent(QMouseEvent* me, Screen* screen){
     rectangle->setSecondPoint(me->position().toPoint());
-
+    rectangle = std::make_shared<Rectangle>(get_free_id());
+    rectangle_already_on_screen = false;
     screen->update();
 }
 
+void CreateRectangleAction::keyPressEvent(QKeyEvent* ke, Screen* screen){
+    if(ke->key() == Qt::Key_Escape && rectangle_already_on_screen){
+        screen->deleteShape(screen->countOfShapes()-1);
+        screen->update();
+    }
+}

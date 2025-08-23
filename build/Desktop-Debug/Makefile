@@ -248,6 +248,30 @@ circle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/circle.cpp.s
 .PHONY : circle.cpp.s
 
+connection.o: connection.cpp.o
+.PHONY : connection.o
+
+# target to build an object file
+connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/connection.cpp.o
+.PHONY : connection.cpp.o
+
+connection.i: connection.cpp.i
+.PHONY : connection.i
+
+# target to preprocess a source file
+connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/connection.cpp.i
+.PHONY : connection.cpp.i
+
+connection.s: connection.cpp.s
+.PHONY : connection.s
+
+# target to generate assembly for a file
+connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/connection.cpp.s
+.PHONY : connection.cpp.s
+
 createcircleaction.o: createcircleaction.cpp.o
 .PHONY : createcircleaction.o
 
@@ -319,6 +343,30 @@ createtriangleaction.s: createtriangleaction.cpp.s
 createtriangleaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createtriangleaction.cpp.s
 .PHONY : createtriangleaction.cpp.s
+
+getFreeId.o: getFreeId.cpp.o
+.PHONY : getFreeId.o
+
+# target to build an object file
+getFreeId.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/getFreeId.cpp.o
+.PHONY : getFreeId.cpp.o
+
+getFreeId.i: getFreeId.cpp.i
+.PHONY : getFreeId.i
+
+# target to preprocess a source file
+getFreeId.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/getFreeId.cpp.i
+.PHONY : getFreeId.cpp.i
+
+getFreeId.s: getFreeId.cpp.s
+.PHONY : getFreeId.s
+
+# target to generate assembly for a file
+getFreeId.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/getFreeId.cpp.s
+.PHONY : getFreeId.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -461,6 +509,9 @@ help:
 	@echo "... circle.o"
 	@echo "... circle.i"
 	@echo "... circle.s"
+	@echo "... connection.o"
+	@echo "... connection.i"
+	@echo "... connection.s"
 	@echo "... createcircleaction.o"
 	@echo "... createcircleaction.i"
 	@echo "... createcircleaction.s"
@@ -470,6 +521,9 @@ help:
 	@echo "... createtriangleaction.o"
 	@echo "... createtriangleaction.i"
 	@echo "... createtriangleaction.s"
+	@echo "... getFreeId.o"
+	@echo "... getFreeId.i"
+	@echo "... getFreeId.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

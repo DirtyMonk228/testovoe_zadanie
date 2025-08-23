@@ -373,4 +373,6 @@ CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o: \
  /home/ss/cppProjects/test_paint_job/triangle.h \
  /home/ss/cppProjects/test_paint_job/createrectangleaction.h \
  /home/ss/cppProjects/test_paint_job/rectangle.h \
- /home/ss/cppProjects/test_paint_job/circle.h
+ /home/ss/cppProjects/test_paint_job/connection.h \
+ /home/ss/cppProjects/test_paint_job/circle.h \
+ /home/ss/cppProjects/test_paint_job/getFreeId.h

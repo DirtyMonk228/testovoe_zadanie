@@ -3,6 +3,7 @@
   /home/ss/cppProjects/test_paint_job/IAction.h \
   /home/ss/cppProjects/test_paint_job/IShape.h \
   /home/ss/cppProjects/test_paint_job/circle.h \
+  /home/ss/cppProjects/test_paint_job/connection.h \
   /home/ss/cppProjects/test_paint_job/createcircleaction.h \
   /home/ss/cppProjects/test_paint_job/createrectangleaction.h \
   /home/ss/cppProjects/test_paint_job/createtriangleaction.h \

@@ -4,8 +4,10 @@
 class Circle:public IShape
 {
 public:
-    Circle();
+    Circle(int );
     void draw(QPainter&) const override;
+    QPoint getCenter() const override;
+    bool isPointInShape(QPoint) const override;
     QPoint firstPoint() const {return first_point;}
     QPoint secondPoint()const {return second_point;}
     void setFirstPoint(QPoint f){first_point = f;}

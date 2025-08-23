@@ -1,11 +1,15 @@
 #include "createtriangleaction.h"
-
-CreateTriangleAction::CreateTriangleAction():IAction() {}
+#include"getFreeId.h"
+CreateTriangleAction::CreateTriangleAction():IAction() {
+    triangle = std::make_shared<Triangle>(get_free_id());
+}
 
 void CreateTriangleAction::mousePressEvent(QMouseEvent* me, Screen* screen){
-    triangle = std::make_shared<Triangle>();
+    if(me->button() == Qt::RightButton && triangle_already_on_screen){
+        screen->deleteShape(screen->countOfShapes()-1);
+        screen->update();
+    }
     triangle->setFirstPoint(me->position().toPoint());
-    triangle_already_on_screen = false;
 }
 void CreateTriangleAction::mouseMoveEvent(QMouseEvent* me,Screen* screen){
     triangle->setSecondPoint(me->position().toPoint());
@@ -17,7 +21,14 @@ void CreateTriangleAction::mouseMoveEvent(QMouseEvent* me,Screen* screen){
 }
 void CreateTriangleAction::mouseReleaseEvent(QMouseEvent* me, Screen* screen){
     triangle->setSecondPoint(me->position().toPoint());
-
+    triangle = std::make_shared<Triangle>(get_free_id());
+    triangle_already_on_screen = false;
     screen->update();
 }
 
+void CreateTriangleAction::keyPressEvent(QKeyEvent* ke, Screen* screen){
+    if(ke->key() == Qt::Key_Escape && triangle_already_on_screen){
+        screen->deleteShape(screen->countOfShapes()-1);
+        screen->update();
+    }
+}

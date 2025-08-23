@@ -33,6 +33,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         rectangle.h rectangle.cpp
         circle.h circle.cpp
         createcircleaction.h createcircleaction.cpp
+        connection.h connection.cpp
+        getFreeId.h
+        getFreeId.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

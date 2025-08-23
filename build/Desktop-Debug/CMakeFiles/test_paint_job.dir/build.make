@@ -216,6 +216,34 @@ CMakeFiles/test_paint_job.dir/createcircleaction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_paint_job.dir/createcircleaction.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ss/cppProjects/test_paint_job/createcircleaction.cpp -o CMakeFiles/test_paint_job.dir/createcircleaction.cpp.s
 
+CMakeFiles/test_paint_job.dir/connection.cpp.o: CMakeFiles/test_paint_job.dir/flags.make
+CMakeFiles/test_paint_job.dir/connection.cpp.o: /home/ss/cppProjects/test_paint_job/connection.cpp
+CMakeFiles/test_paint_job.dir/connection.cpp.o: CMakeFiles/test_paint_job.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test_paint_job.dir/connection.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_paint_job.dir/connection.cpp.o -MF CMakeFiles/test_paint_job.dir/connection.cpp.o.d -o CMakeFiles/test_paint_job.dir/connection.cpp.o -c /home/ss/cppProjects/test_paint_job/connection.cpp
+
+CMakeFiles/test_paint_job.dir/connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_paint_job.dir/connection.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ss/cppProjects/test_paint_job/connection.cpp > CMakeFiles/test_paint_job.dir/connection.cpp.i
+
+CMakeFiles/test_paint_job.dir/connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_paint_job.dir/connection.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ss/cppProjects/test_paint_job/connection.cpp -o CMakeFiles/test_paint_job.dir/connection.cpp.s
+
+CMakeFiles/test_paint_job.dir/getFreeId.cpp.o: CMakeFiles/test_paint_job.dir/flags.make
+CMakeFiles/test_paint_job.dir/getFreeId.cpp.o: /home/ss/cppProjects/test_paint_job/getFreeId.cpp
+CMakeFiles/test_paint_job.dir/getFreeId.cpp.o: CMakeFiles/test_paint_job.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test_paint_job.dir/getFreeId.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_paint_job.dir/getFreeId.cpp.o -MF CMakeFiles/test_paint_job.dir/getFreeId.cpp.o.d -o CMakeFiles/test_paint_job.dir/getFreeId.cpp.o -c /home/ss/cppProjects/test_paint_job/getFreeId.cpp
+
+CMakeFiles/test_paint_job.dir/getFreeId.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_paint_job.dir/getFreeId.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ss/cppProjects/test_paint_job/getFreeId.cpp > CMakeFiles/test_paint_job.dir/getFreeId.cpp.i
+
+CMakeFiles/test_paint_job.dir/getFreeId.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_paint_job.dir/getFreeId.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ss/cppProjects/test_paint_job/getFreeId.cpp -o CMakeFiles/test_paint_job.dir/getFreeId.cpp.s
+
 # Object files for target test_paint_job
 test_paint_job_OBJECTS = \
 "CMakeFiles/test_paint_job.dir/test_paint_job_autogen/mocs_compilation.cpp.o" \
@@ -227,7 +255,9 @@ test_paint_job_OBJECTS = \
 "CMakeFiles/test_paint_job.dir/createrectangleaction.cpp.o" \
 "CMakeFiles/test_paint_job.dir/rectangle.cpp.o" \
 "CMakeFiles/test_paint_job.dir/circle.cpp.o" \
-"CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o"
+"CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o" \
+"CMakeFiles/test_paint_job.dir/connection.cpp.o" \
+"CMakeFiles/test_paint_job.dir/getFreeId.cpp.o"
 
 # External object files for target test_paint_job
 test_paint_job_EXTERNAL_OBJECTS =
@@ -242,6 +272,8 @@ test_paint_job: CMakeFiles/test_paint_job.dir/createrectangleaction.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/rectangle.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/circle.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o
+test_paint_job: CMakeFiles/test_paint_job.dir/connection.cpp.o
+test_paint_job: CMakeFiles/test_paint_job.dir/getFreeId.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/build.make
 test_paint_job: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 test_paint_job: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
@@ -249,7 +281,7 @@ test_paint_job: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 test_paint_job: /usr/lib/x86_64-linux-gnu/libGLX.so
 test_paint_job: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 test_paint_job: CMakeFiles/test_paint_job.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable test_paint_job"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable test_paint_job"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_paint_job.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,11 +1,15 @@
 #include "createcircleaction.h"
-
-CreateCircleAction::CreateCircleAction():IAction() {}
+#include"getFreeId.h"
+CreateCircleAction::CreateCircleAction():IAction() {
+    circle = std::make_shared<Circle>(get_free_id());
+}
 
 void CreateCircleAction::mousePressEvent(QMouseEvent* me, Screen* screen){
-    circle = std::make_shared<Circle>();
+    if(me->button() == Qt::RightButton && circle_already_on_screen){
+        screen->deleteShape(screen->countOfShapes()-1);
+        screen->update();
+    }
     circle->setFirstPoint(me->position().toPoint());
-    circle_already_on_screen = false;
 }
 void CreateCircleAction::mouseMoveEvent(QMouseEvent* me,Screen* screen){
     circle->setSecondPoint(me->position().toPoint());
@@ -17,7 +21,13 @@ void CreateCircleAction::mouseMoveEvent(QMouseEvent* me,Screen* screen){
 }
 void CreateCircleAction::mouseReleaseEvent(QMouseEvent* me, Screen* screen){
     circle->setSecondPoint(me->position().toPoint());
-
+    circle = std::make_shared<Circle>(get_free_id());
+    circle_already_on_screen = false;
     screen->update();
 }
-
+void CreateCircleAction::keyPressEvent(QKeyEvent* ke, Screen* screen){
+    if(ke->key() == Qt::Key_Escape && circle_already_on_screen){
+        screen->deleteShape(screen->countOfShapes()-1);
+        screen->update();
+    }
+}
