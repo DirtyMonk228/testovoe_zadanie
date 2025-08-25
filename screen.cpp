@@ -6,7 +6,7 @@ Screen::Screen(QWidget *parent)
     setFocusPolicy(Qt::StrongFocus);
     setFocus();
     resize(size_screen);
-    current_action = new CreateCircleAction;
+    current_action = new CreateTriangleAction;
 }
 
 void Screen::addShape(const shared_ptr<IShape>& shape){

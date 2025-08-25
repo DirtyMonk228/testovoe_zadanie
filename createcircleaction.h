@@ -15,6 +15,7 @@ public:
 private:
     shared_ptr<Circle> circle;
     bool circle_already_on_screen = false;
+    bool draw_circle = false;
 };
 
 

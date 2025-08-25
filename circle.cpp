@@ -44,4 +44,9 @@ void Circle::deserialize(QDataStream& in){
     in>>id;setId(id);
     in>>first_point>>second_point;
 }
+
+double Circle::getArea() const{
+    QRect bounding_rect(first_point,second_point);
+    return M_PI * (bounding_rect.width()/2)*(bounding_rect.height()/2);
+}
 Circle::~Circle(){}

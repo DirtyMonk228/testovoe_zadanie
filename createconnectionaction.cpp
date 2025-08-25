@@ -9,14 +9,19 @@ void CreateConnectionAction::resetState(Screen* screen){
     connect = std::make_shared<Connection>();
     connection_on_screen = false;
 }
-bool CreateConnectionAction::getShapeWithPointInside(std::shared_ptr<IShape>& for_save,const std::vector<std::shared_ptr<IShape>>& shapes,QPoint point){
+bool CreateConnectionAction::getShapeWithPointInside(std::shared_ptr<IShape>& for_save,const std::vector<std::shared_ptr<IShape>>& shapes,QPoint point)const{
+    double min_area = INT64_MAX;
+    bool success = false;
     for(int i = 0;i<shapes.size();++i){
-        if(shapes[i]->isPointInShape(point)){
+        double current_area = shapes[i]->getArea();
+        if(shapes[i]->isPointInShape(point) && current_area<min_area){
+            success = true;
             for_save = shapes[i];
-            return true;
+            min_area = current_area;
+
         }
     }
-    return false;
+    return success;
 }
 void CreateConnectionAction::mousePressEvent(QMouseEvent* me, Screen* screen){
     std::shared_ptr<IShape> tmp;
@@ -24,7 +29,9 @@ void CreateConnectionAction::mousePressEvent(QMouseEvent* me, Screen* screen){
         screen->deleteConnection(screen->countOfConnection()-1);
         resetState(screen);
         screen->update();
+        return;
     }
+    if(me->button() == Qt::RightButton)return;
     if(first_click == false && !getShapeWithPointInside(tmp,screen->getShapes(),me->position().toPoint())){
         screen->deleteConnection(screen->countOfConnection()-1);
         resetState(screen);

@@ -26,29 +26,29 @@ QPoint Triangle::getCenter() const{
         );
 }
 
-bool Triangle::isPointInShape(QPoint point)const{
+
+
+// Вычисление площади треугольника по трем точкам
+double triangleArea(const QPointF& a, const QPointF& b, const QPointF& c) {
+    return std::abs((a.x() * (b.y() - c.y()) +
+                     b.x() * (c.y() - a.y()) +
+                     c.x() * (a.y() - b.y())) / 2.0);
+}
+
+bool Triangle::isPointInShape( QPoint point)const {
     QPoint a = QPoint(first_point.x()+(second_point.x()-first_point.x())/2,first_point.y());
     QPoint b = QPoint(first_point.x(),second_point.y());
     QPoint c = second_point;
-    QPoint v0 = c - a;
-    QPoint v1 = b - a;
-    QPoint v2 = point - a;
+    double main_area = triangleArea(a, b, c);
+
+    double area1 = triangleArea(point, a, b);
+    double area2 = triangleArea(point, b, c);
+    double area3 = triangleArea(point, c, a);
 
 
-    int dot00 = QPoint::dotProduct(v0, v0);
-    int dot01 = QPoint::dotProduct(v0, v1);
-    int dot02 = QPoint::dotProduct(v0, v2);
-    int dot11 = QPoint::dotProduct(v1, v1);
-    int dot12 = QPoint::dotProduct(v1, v2);
-
-    double invDenom = 1.0 / (dot00 * dot11 - dot01 * dot01);
-    double u = (dot11 * dot02 - dot01 * dot12) * invDenom;
-    double v = (dot00 * dot12 - dot01 * dot02) * invDenom;
-
-    // Точка внутри треугольника, если u >= 0, v >= 0 и u + v <= 1
-    return (u >= 0) && (v >= 0) && (u + v <= 1);
+    const double epsilon = 1e-10;
+    return std::abs(main_area - (area1 + area2 + area3)) < epsilon;
 }
-
 void Triangle::serialize(QDataStream& out) const{
     out<<getType()<<getId()<<first_point<<second_point;
 }
@@ -57,5 +57,9 @@ void Triangle::deserialize(QDataStream& in){
     int id;
     in>>id;setId(id);
     in>>first_point>>second_point;
+}
+double Triangle::getArea() const{
+    QRect bounding_rect(first_point,second_point);
+    return bounding_rect.width()*bounding_rect.height()/2;
 }
 Triangle::~Triangle(){}

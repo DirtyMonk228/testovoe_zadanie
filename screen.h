@@ -16,20 +16,23 @@ class Screen : public QWidget
 public:
     explicit Screen(QWidget *parent = nullptr);
     void addShape(const shared_ptr<IShape> &);
-    void deleteShape(int);
+    void deleteShape(int pos);
     void deleteShapeById(int id);
+    int countOfShapes()const;
     const std::vector<shared_ptr<IShape>>& getShapes(){return shapes;}
     shared_ptr<IShape> shapeById(int id);
+
     void deleteConnectionWithShapeId(int id);
     void deleteConnection(int position){connections.erase(connections.begin()+position);}
     void addConnection(std::shared_ptr<Connection>);
-    int countOfShapes()const;
     int countOfConnection(){return connections.size();}
+
     void paintEvent(QPaintEvent*) override;
     void mousePressEvent(QMouseEvent*)override;
     void mouseMoveEvent(QMouseEvent*) override;
     void mouseReleaseEvent(QMouseEvent*) override;
     void keyPressEvent(QKeyEvent* ) override;
+
     void setAction(IAction*);
 
     void serialize(QString filename)const;

@@ -9,6 +9,7 @@ public:
     QPoint getCenter() const override;
     bool isPointInShape(QPoint) const override;
     void moveShape(QPoint) override;
+    double getArea()const override;
     void serialize(QDataStream&) const override;
     void deserialize(QDataStream&)override;
     QPoint firstPoint() const {return first_point;}

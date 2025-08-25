@@ -63,4 +63,4 @@ void Application::saveFile() {
         screen->serialize(file_name);
     }
 }
-Application::~Application() {}
+Application::~Application() {delete screen;}

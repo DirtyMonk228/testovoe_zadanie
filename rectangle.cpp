@@ -30,4 +30,8 @@ void Rectangle::deserialize(QDataStream& in){
     in>>id;setId(id);
     in>>first_point>>second_point;
 }
+double Rectangle::getArea() const{
+    QRect bounding_rect(first_point,second_point);
+    return bounding_rect.width()*bounding_rect.height();
+}
 Rectangle::~Rectangle(){}

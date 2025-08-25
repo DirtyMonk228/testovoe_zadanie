@@ -9,7 +9,7 @@ public:
     void mouseMoveEvent(QMouseEvent*,Screen*) override;
     void mouseReleaseEvent(QMouseEvent*,Screen*) override;
     void keyPressEvent(QKeyEvent*,Screen*) override;
-    bool getShapeWithPointInside(std::shared_ptr<IShape>&,const std::vector<std::shared_ptr<IShape>>&,QPoint);
+    bool getShapeWithPointInside(std::shared_ptr<IShape>&,const std::vector<std::shared_ptr<IShape>>&,QPoint)const;
 private:
     bool start_drag = false;
     std::shared_ptr<IShape> drag_shape;

@@ -15,6 +15,7 @@ public:
 private:
     shared_ptr<Rectangle> rectangle;
     bool rectangle_already_on_screen = false;
+    bool draw_rectangle = false;
 };
 
 

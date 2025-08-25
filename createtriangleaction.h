@@ -15,6 +15,7 @@ public:
 private:
     shared_ptr<Triangle> triangle;
     bool triangle_already_on_screen = false;
+    bool draw_triangle = false;
 
 };
 
