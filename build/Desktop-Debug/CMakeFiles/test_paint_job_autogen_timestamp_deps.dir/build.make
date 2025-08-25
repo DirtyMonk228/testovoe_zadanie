@@ -66,10 +66,10 @@ include CMakeFiles/test_paint_job_autogen_timestamp_deps.dir/compiler_depend.mak
 # Include the progress variables for this target.
 include CMakeFiles/test_paint_job_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/test_paint_job_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+CMakeFiles/test_paint_job_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/test_paint_job_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/test_paint_job_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
-CMakeFiles/test_paint_job_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
+CMakeFiles/test_paint_job_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 
 test_paint_job_autogen_timestamp_deps: CMakeFiles/test_paint_job_autogen_timestamp_deps
 test_paint_job_autogen_timestamp_deps: CMakeFiles/test_paint_job_autogen_timestamp_deps.dir/build.make

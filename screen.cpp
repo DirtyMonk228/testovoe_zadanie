@@ -17,22 +17,27 @@ void Screen::deleteShape(int position){
     shapes.erase(shapes.begin()+position);
 }
 
-auto Screen::shapeById(int id){
-    auto it = std::find_if(shapes.begin(),shapes.end(),
-                           [id](const shared_ptr<IShape>& shape){return shape->getId() == id;});
-    return it;
+void Screen::deleteShapeById(int id){
+    shapes.erase(std::find_if(shapes.begin(),shapes.end(),
+                              [id](const std::shared_ptr<IShape>& shape){return shape->getId() == id;}));
 }
 
-void Screen::deleteConnection(int id){
+shared_ptr<IShape> Screen::shapeById(int id){
+    auto it = std::find_if(shapes.begin(),shapes.end(),
+                           [id](const shared_ptr<IShape>& shape){return shape->getId() == id;});
+    return *it;
+}
+
+void Screen::deleteConnectionWithShapeId(int id){
     connections.erase(
         std::remove_if(connections.begin(), connections.end(),
-                       [id](const Connection& conn) {
-                           return conn.getFromId() == id|| conn.getToId() == id;
+                       [id](const shared_ptr<Connection>&  conn) {
+                           return conn->getFromId() == id|| conn->getToId() == id;
                        }),
         connections.end());
 }
 
-void Screen::addConnection(Connection conn){
+void Screen::addConnection(std::shared_ptr<Connection> conn){
     connections.push_back(conn);
 }
 // void Screen::deleteShape(const shared_ptr<IShape>& shape){
@@ -51,6 +56,7 @@ void Screen::paintEvent(QPaintEvent* pe){
     painter.fillRect(0,0,width(),height(),background_color);
     painter.setPen(QPen(Qt::black,3));
     for(int i = 0;i<shapes.size();++i) shapes[i]->draw(painter);
+    for(int i = 0;i<connections.size();++i) connections[i]->draw(painter,this);
 }
 void Screen::mousePressEvent(QMouseEvent* me){
     current_action->mousePressEvent(me,this);

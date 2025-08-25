@@ -2,6 +2,11 @@
 
 Circle::Circle(int id):IShape(id) {}
 
+
+void Circle::moveShape(QPoint move_point){
+    first_point+= move_point;
+    second_point+=move_point;
+}
 void Circle::draw(QPainter& painter)const{
     QRect tmp_rect = QRect(first_point,second_point);
     painter.drawEllipse(tmp_rect);
@@ -12,23 +17,19 @@ QPoint Circle::getCenter() const{
 }
 
 bool Circle::isPointInShape(QPoint point)const {
-    QRect bounding_rect(first_point,second_point);
+    QRect bounding_rect = QRect(first_point, second_point).normalized();
 
-    if (bounding_rect.isEmpty() || bounding_rect.isNull()) {
+    if (bounding_rect.isEmpty()) {
         return false;
     }
 
     QPoint center = bounding_rect.center();
-    int a = bounding_rect.width() / 2;
-    int b = bounding_rect.height() / 2;
+    double a = bounding_rect.width() / 2.0;
+    double b = bounding_rect.height() / 2.0;
 
-    if (a <= 0 || b <= 0) {
-        return false;
-    }
+    double dx = point.x() - center.x();
+    double dy = point.y() - center.y();
 
-    int dx = point.x() - center.x();
-    int dy = point.y() - center.y();
-
-    return (dx * dx * b * b + dy * dy * a * a) <= (a * a * b * b);
+    return (dx * dx) / (a * a) + (dy * dy) / (b * b) <= 1.0;
 }
 Circle::~Circle(){}

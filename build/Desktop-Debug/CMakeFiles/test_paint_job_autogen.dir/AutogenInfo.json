@@ -242,6 +242,12 @@
 			null
 		],
 		[
+			"/home/ss/cppProjects/test_paint_job/createconnectionaction.h",
+			"MU",
+			"EWIEGA46WW/moc_createconnectionaction.cpp",
+			null
+		],
+		[
 			"/home/ss/cppProjects/test_paint_job/createrectangleaction.h",
 			"MU",
 			"EWIEGA46WW/moc_createrectangleaction.cpp",
@@ -251,6 +257,18 @@
 			"/home/ss/cppProjects/test_paint_job/createtriangleaction.h",
 			"MU",
 			"EWIEGA46WW/moc_createtriangleaction.cpp",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/deleteshapeaction.h",
+			"MU",
+			"EWIEGA46WW/moc_deleteshapeaction.cpp",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/draganddropaction.h",
+			"MU",
+			"EWIEGA46WW/moc_draganddropaction.cpp",
 			null
 		],
 		[
@@ -345,12 +363,27 @@
 			null
 		],
 		[
+			"/home/ss/cppProjects/test_paint_job/createconnectionaction.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/ss/cppProjects/test_paint_job/createrectangleaction.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/ss/cppProjects/test_paint_job/createtriangleaction.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/deleteshapeaction.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/draganddropaction.cpp",
 			"MU",
 			null
 		],

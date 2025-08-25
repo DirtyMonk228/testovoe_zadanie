@@ -7,6 +7,7 @@ public:
     virtual ~IShape() = default;
     virtual QPoint getCenter() const = 0;
     virtual bool isPointInShape(QPoint) const = 0;
+    virtual void moveShape(QPoint) = 0;
     int getId(){return id;}
 
 private:

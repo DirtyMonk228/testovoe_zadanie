@@ -1,5 +1,10 @@
 #include "triangle.h"
 Triangle::Triangle(int id):IShape(id){}
+
+void Triangle::moveShape(QPoint move_point){
+    first_point+= move_point;
+    second_point+=move_point;
+}
 void Triangle::draw(QPainter& painter) const {
     QPolygon triangle;
     QPoint first_p = firstPoint();

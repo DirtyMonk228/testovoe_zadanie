@@ -296,6 +296,30 @@ createcircleaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createcircleaction.cpp.s
 .PHONY : createcircleaction.cpp.s
 
+createconnectionaction.o: createconnectionaction.cpp.o
+.PHONY : createconnectionaction.o
+
+# target to build an object file
+createconnectionaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o
+.PHONY : createconnectionaction.cpp.o
+
+createconnectionaction.i: createconnectionaction.cpp.i
+.PHONY : createconnectionaction.i
+
+# target to preprocess a source file
+createconnectionaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.i
+.PHONY : createconnectionaction.cpp.i
+
+createconnectionaction.s: createconnectionaction.cpp.s
+.PHONY : createconnectionaction.s
+
+# target to generate assembly for a file
+createconnectionaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.s
+.PHONY : createconnectionaction.cpp.s
+
 createrectangleaction.o: createrectangleaction.cpp.o
 .PHONY : createrectangleaction.o
 
@@ -343,6 +367,54 @@ createtriangleaction.s: createtriangleaction.cpp.s
 createtriangleaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/createtriangleaction.cpp.s
 .PHONY : createtriangleaction.cpp.s
+
+deleteshapeaction.o: deleteshapeaction.cpp.o
+.PHONY : deleteshapeaction.o
+
+# target to build an object file
+deleteshapeaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o
+.PHONY : deleteshapeaction.cpp.o
+
+deleteshapeaction.i: deleteshapeaction.cpp.i
+.PHONY : deleteshapeaction.i
+
+# target to preprocess a source file
+deleteshapeaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.i
+.PHONY : deleteshapeaction.cpp.i
+
+deleteshapeaction.s: deleteshapeaction.cpp.s
+.PHONY : deleteshapeaction.s
+
+# target to generate assembly for a file
+deleteshapeaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.s
+.PHONY : deleteshapeaction.cpp.s
+
+draganddropaction.o: draganddropaction.cpp.o
+.PHONY : draganddropaction.o
+
+# target to build an object file
+draganddropaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o
+.PHONY : draganddropaction.cpp.o
+
+draganddropaction.i: draganddropaction.cpp.i
+.PHONY : draganddropaction.i
+
+# target to preprocess a source file
+draganddropaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/draganddropaction.cpp.i
+.PHONY : draganddropaction.cpp.i
+
+draganddropaction.s: draganddropaction.cpp.s
+.PHONY : draganddropaction.s
+
+# target to generate assembly for a file
+draganddropaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/draganddropaction.cpp.s
+.PHONY : draganddropaction.cpp.s
 
 getFreeId.o: getFreeId.cpp.o
 .PHONY : getFreeId.o
@@ -515,12 +587,21 @@ help:
 	@echo "... createcircleaction.o"
 	@echo "... createcircleaction.i"
 	@echo "... createcircleaction.s"
+	@echo "... createconnectionaction.o"
+	@echo "... createconnectionaction.i"
+	@echo "... createconnectionaction.s"
 	@echo "... createrectangleaction.o"
 	@echo "... createrectangleaction.i"
 	@echo "... createrectangleaction.s"
 	@echo "... createtriangleaction.o"
 	@echo "... createtriangleaction.i"
 	@echo "... createtriangleaction.s"
+	@echo "... deleteshapeaction.o"
+	@echo "... deleteshapeaction.i"
+	@echo "... deleteshapeaction.s"
+	@echo "... draganddropaction.o"
+	@echo "... draganddropaction.i"
+	@echo "... draganddropaction.s"
 	@echo "... getFreeId.o"
 	@echo "... getFreeId.i"
 	@echo "... getFreeId.s"

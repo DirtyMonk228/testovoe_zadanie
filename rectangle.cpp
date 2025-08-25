@@ -1,7 +1,10 @@
 #include "rectangle.h"
 
 Rectangle::Rectangle(int id):IShape(id) {}
-
+void Rectangle::moveShape(QPoint move_point){
+    first_point+= move_point;
+    second_point+=move_point;
+}
 void Rectangle::draw(QPainter& painter)const{
     QRect tmp_rect = QRect(first_point,second_point);
     painter.drawRect(tmp_rect);

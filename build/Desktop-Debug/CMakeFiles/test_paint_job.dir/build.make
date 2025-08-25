@@ -244,6 +244,48 @@ CMakeFiles/test_paint_job.dir/getFreeId.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_paint_job.dir/getFreeId.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ss/cppProjects/test_paint_job/getFreeId.cpp -o CMakeFiles/test_paint_job.dir/getFreeId.cpp.s
 
+CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o: CMakeFiles/test_paint_job.dir/flags.make
+CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o: /home/ss/cppProjects/test_paint_job/createconnectionaction.cpp
+CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o: CMakeFiles/test_paint_job.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o -MF CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o.d -o CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o -c /home/ss/cppProjects/test_paint_job/createconnectionaction.cpp
+
+CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ss/cppProjects/test_paint_job/createconnectionaction.cpp > CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.i
+
+CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ss/cppProjects/test_paint_job/createconnectionaction.cpp -o CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.s
+
+CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o: CMakeFiles/test_paint_job.dir/flags.make
+CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o: /home/ss/cppProjects/test_paint_job/draganddropaction.cpp
+CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o: CMakeFiles/test_paint_job.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o -MF CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o.d -o CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o -c /home/ss/cppProjects/test_paint_job/draganddropaction.cpp
+
+CMakeFiles/test_paint_job.dir/draganddropaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_paint_job.dir/draganddropaction.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ss/cppProjects/test_paint_job/draganddropaction.cpp > CMakeFiles/test_paint_job.dir/draganddropaction.cpp.i
+
+CMakeFiles/test_paint_job.dir/draganddropaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_paint_job.dir/draganddropaction.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ss/cppProjects/test_paint_job/draganddropaction.cpp -o CMakeFiles/test_paint_job.dir/draganddropaction.cpp.s
+
+CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o: CMakeFiles/test_paint_job.dir/flags.make
+CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o: /home/ss/cppProjects/test_paint_job/deleteshapeaction.cpp
+CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o: CMakeFiles/test_paint_job.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o -MF CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o.d -o CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o -c /home/ss/cppProjects/test_paint_job/deleteshapeaction.cpp
+
+CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ss/cppProjects/test_paint_job/deleteshapeaction.cpp > CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.i
+
+CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ss/cppProjects/test_paint_job/deleteshapeaction.cpp -o CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.s
+
 # Object files for target test_paint_job
 test_paint_job_OBJECTS = \
 "CMakeFiles/test_paint_job.dir/test_paint_job_autogen/mocs_compilation.cpp.o" \
@@ -257,7 +299,10 @@ test_paint_job_OBJECTS = \
 "CMakeFiles/test_paint_job.dir/circle.cpp.o" \
 "CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o" \
 "CMakeFiles/test_paint_job.dir/connection.cpp.o" \
-"CMakeFiles/test_paint_job.dir/getFreeId.cpp.o"
+"CMakeFiles/test_paint_job.dir/getFreeId.cpp.o" \
+"CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o" \
+"CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o" \
+"CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o"
 
 # External object files for target test_paint_job
 test_paint_job_EXTERNAL_OBJECTS =
@@ -274,6 +319,9 @@ test_paint_job: CMakeFiles/test_paint_job.dir/circle.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/connection.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/getFreeId.cpp.o
+test_paint_job: CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o
+test_paint_job: CMakeFiles/test_paint_job.dir/draganddropaction.cpp.o
+test_paint_job: CMakeFiles/test_paint_job.dir/deleteshapeaction.cpp.o
 test_paint_job: CMakeFiles/test_paint_job.dir/build.make
 test_paint_job: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 test_paint_job: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
@@ -281,7 +329,7 @@ test_paint_job: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 test_paint_job: /usr/lib/x86_64-linux-gnu/libGLX.so
 test_paint_job: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 test_paint_job: CMakeFiles/test_paint_job.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable test_paint_job"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ss/cppProjects/test_paint_job/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable test_paint_job"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_paint_job.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
