@@ -25,28 +25,28 @@ bool CreateConnectionAction::getShapeWithPointInside(std::shared_ptr<IShape>& fo
 }
 void CreateConnectionAction::mousePressEvent(QMouseEvent* me, Screen* screen){
     std::shared_ptr<IShape> tmp;
-    if(me->button() == Qt::RightButton && connection_on_screen){
+    if(me->button() == Qt::RightButton && connection_on_screen){//отмена отрисовки по нажатию пкм
         screen->deleteConnection(screen->countOfConnection()-1);
         resetState(screen);
         screen->update();
         return;
     }
-    if(me->button() == Qt::RightButton)return;
-    if(first_click == false && !getShapeWithPointInside(tmp,screen->getShapes(),me->position().toPoint())){
+    if(me->button() == Qt::RightButton)return;//не дает рисовать нажатием пкм
+    if(first_click == false && !getShapeWithPointInside(tmp,screen->getShapes(),me->position().toPoint())){//удаление связи в случае неуспешного коннекта
         screen->deleteConnection(screen->countOfConnection()-1);
         resetState(screen);
         screen->update();
 
         return;
     }
-    if(!getShapeWithPointInside(tmp,screen->getShapes(),me->position().toPoint()))return;
-    if(first_click){
+    if(!getShapeWithPointInside(tmp,screen->getShapes(),me->position().toPoint()))return;//отсутствие создания связи при не попадании по фигуре
+    if(first_click){//начало генерации связи в случае успешного первого клика по фигуре
         connect->setStartPoint(tmp->getCenter());
         connect->setFromId(tmp->getId());
         screen->setMouseTracking(true);
         first_click = false;
     }
-    else{
+    else{//создание связи меж фигурами
         connect->setEndPoint(tmp->getCenter());
         connect->setToId(tmp->getId());
         connect->connectionIsComplete(true);

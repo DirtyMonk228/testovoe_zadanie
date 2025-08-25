@@ -28,7 +28,6 @@ QPoint Triangle::getCenter() const{
 
 
 
-// Вычисление площади треугольника по трем точкам
 double triangleArea(const QPointF& a, const QPointF& b, const QPointF& c) {
     return std::abs((a.x() * (b.y() - c.y()) +
                      b.x() * (c.y() - a.y()) +
