@@ -1,6 +1,7 @@
 #pragma once
 #include<QBoxLayout>
 #include<QPushButton>
+#include<QFileDialog>
 #include <QWidget>
 #include"screen.h"
 class Application : public QWidget
@@ -16,5 +17,7 @@ private:
     Screen* screen = new Screen;
 public slots:
     void buttonMode();
+    void openFile();
+    void saveFile();
 };
 

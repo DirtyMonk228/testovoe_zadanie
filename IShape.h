@@ -1,15 +1,20 @@
 #pragma once
 #include<QPainter>
-class IShape{
+#include"ISerializable.h"
+class IShape:public ISerializable{
 public:
-    IShape(int _id):id(_id){}
+    IShape(int _id):ISerializable(),id(_id){}
     virtual void draw(QPainter&) const = 0;
     virtual ~IShape() = default;
     virtual QPoint getCenter() const = 0;
     virtual bool isPointInShape(QPoint) const = 0;
     virtual void moveShape(QPoint) = 0;
-    int getId(){return id;}
+    void setType(const QString& _type){type =_type;}
+    QString getType()const {return type;}
+    int getId()const {return id;}
+    void setId(int _id){id=_id;}
 
 private:
     int id;
+    QString type;
 };

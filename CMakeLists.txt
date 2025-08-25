@@ -39,6 +39,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         createconnectionaction.h createconnectionaction.cpp
         draganddropaction.h draganddropaction.cpp
         deleteshapeaction.h deleteshapeaction.cpp
+        ISerializable.h
+        create_shapes_by_type.h create_shapes_by_type.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

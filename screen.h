@@ -5,8 +5,10 @@
 #include"IAction.h"
 #include"createtriangleaction.h"
 #include"createrectangleaction.h"
+#include"create_shapes_by_type.h"
 #include"createcircleaction.h"
 #include"connection.h"
+#include<QFile>
 using std::shared_ptr;
 class Screen : public QWidget
 {
@@ -29,6 +31,9 @@ public:
     void mouseReleaseEvent(QMouseEvent*) override;
     void keyPressEvent(QKeyEvent* ) override;
     void setAction(IAction*);
+
+    void serialize(QString filename)const;
+    void deserialize(QString filename, std::unique_ptr<IShape> (*create_shape)(QString) = create_shapes_by_type);
     ~Screen();
 
 private:

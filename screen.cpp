@@ -72,6 +72,54 @@ void Screen::mouseReleaseEvent(QMouseEvent* me){
 void Screen::keyPressEvent(QKeyEvent* ke){
     current_action->keyPressEvent(ke,this);
 }
+
+void Screen::serialize(QString filename) const{
+    QFile file(filename);
+    if (!file.open(QIODevice::WriteOnly)) {
+        return;
+    }
+
+    QDataStream out(&file);
+    out.setVersion(QDataStream::Qt_6_0);
+    int shapes_size = shapes.size();
+    out<<shapes_size;
+    for(int i = 0;i<shapes.size();++i) shapes[i]->serialize(out);
+    int connections_size = connections.size();
+    out<<connections_size;
+    for(int i = 0;i<connections.size();++i)connections[i]->serialize(out);
+    file.close();
+}
+
+void Screen::deserialize(QString filename,std::unique_ptr<IShape> (*create_shape)(QString)){
+    shapes.clear();
+    connections.clear();
+    QFile file(filename);
+    if (!file.open(QIODevice::ReadOnly)) {
+        return;
+    }
+
+    QDataStream in(&file);
+    in.setVersion(QDataStream::Qt_6_0);
+    int count_shapes;
+    in>>count_shapes;
+    for(int i = 0;i<count_shapes;++i){
+        QString type;
+        in>>type;
+        shapes.push_back(create_shape(type));
+        shapes[i]->deserialize(in);
+    }
+    int count_connections;
+    in>>count_connections;
+    for(int i = 0;i<count_connections;++i){
+        connections.push_back(std::make_shared<Connection>());
+        connections[i]->deserialize(in);
+    }
+
+    file.close();
+    update();
+
+
+}
 Screen::~Screen(){
     delete current_action;
 }

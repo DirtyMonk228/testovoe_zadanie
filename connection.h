@@ -1,11 +1,14 @@
 #pragma once
 #include"IShape.h"
+#include<QDataStream>
 class Screen;
 class Connection
 {
 public:
     Connection();
     void draw(QPainter &,Screen*) const;
+    void serialize(QDataStream&) const;
+    void deserialize(QDataStream&);
     int getFromId()const{return from_id;}
     int getToId()const{return to_id;}
     void setStartPoint(QPoint p){start = p;}

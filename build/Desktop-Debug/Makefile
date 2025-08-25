@@ -272,6 +272,30 @@ connection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/connection.cpp.s
 .PHONY : connection.cpp.s
 
+create_shapes_by_type.o: create_shapes_by_type.cpp.o
+.PHONY : create_shapes_by_type.o
+
+# target to build an object file
+create_shapes_by_type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/create_shapes_by_type.cpp.o
+.PHONY : create_shapes_by_type.cpp.o
+
+create_shapes_by_type.i: create_shapes_by_type.cpp.i
+.PHONY : create_shapes_by_type.i
+
+# target to preprocess a source file
+create_shapes_by_type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/create_shapes_by_type.cpp.i
+.PHONY : create_shapes_by_type.cpp.i
+
+create_shapes_by_type.s: create_shapes_by_type.cpp.s
+.PHONY : create_shapes_by_type.s
+
+# target to generate assembly for a file
+create_shapes_by_type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_paint_job.dir/build.make CMakeFiles/test_paint_job.dir/create_shapes_by_type.cpp.s
+.PHONY : create_shapes_by_type.cpp.s
+
 createcircleaction.o: createcircleaction.cpp.o
 .PHONY : createcircleaction.o
 
@@ -584,6 +608,9 @@ help:
 	@echo "... connection.o"
 	@echo "... connection.i"
 	@echo "... connection.s"
+	@echo "... create_shapes_by_type.o"
+	@echo "... create_shapes_by_type.i"
+	@echo "... create_shapes_by_type.s"
 	@echo "... createcircleaction.o"
 	@echo "... createcircleaction.i"
 	@echo "... createcircleaction.s"

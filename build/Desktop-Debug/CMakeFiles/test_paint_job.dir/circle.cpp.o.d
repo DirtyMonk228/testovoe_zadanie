@@ -312,5 +312,8 @@ CMakeFiles/test_paint_job.dir/circle.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
+ /home/ss/cppProjects/test_paint_job/ISerializable.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDataStream \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h

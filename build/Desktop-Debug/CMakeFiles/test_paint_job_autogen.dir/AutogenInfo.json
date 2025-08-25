@@ -212,6 +212,12 @@
 			null
 		],
 		[
+			"/home/ss/cppProjects/test_paint_job/ISerializable.h",
+			"MU",
+			"EWIEGA46WW/moc_ISerializable.cpp",
+			null
+		],
+		[
 			"/home/ss/cppProjects/test_paint_job/IShape.h",
 			"MU",
 			"EWIEGA46WW/moc_IShape.cpp",
@@ -233,6 +239,12 @@
 			"/home/ss/cppProjects/test_paint_job/connection.h",
 			"MU",
 			"EWIEGA46WW/moc_connection.cpp",
+			null
+		],
+		[
+			"/home/ss/cppProjects/test_paint_job/create_shapes_by_type.h",
+			"MU",
+			"EWIEGA46WW/moc_create_shapes_by_type.cpp",
 			null
 		],
 		[
@@ -357,6 +369,11 @@
 		[ "/home/ss/cppProjects/test_paint_job/application.cpp", "MU", null ],
 		[ "/home/ss/cppProjects/test_paint_job/circle.cpp", "MU", null ],
 		[ "/home/ss/cppProjects/test_paint_job/connection.cpp", "MU", null ],
+		[
+			"/home/ss/cppProjects/test_paint_job/create_shapes_by_type.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/ss/cppProjects/test_paint_job/createcircleaction.cpp",
 			"MU",

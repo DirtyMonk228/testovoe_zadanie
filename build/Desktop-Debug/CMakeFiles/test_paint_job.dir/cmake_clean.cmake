@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_paint_job.dir/circle.cpp.o.d"
   "CMakeFiles/test_paint_job.dir/connection.cpp.o"
   "CMakeFiles/test_paint_job.dir/connection.cpp.o.d"
+  "CMakeFiles/test_paint_job.dir/create_shapes_by_type.cpp.o"
+  "CMakeFiles/test_paint_job.dir/create_shapes_by_type.cpp.o.d"
   "CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o"
   "CMakeFiles/test_paint_job.dir/createcircleaction.cpp.o.d"
   "CMakeFiles/test_paint_job.dir/createconnectionaction.cpp.o"

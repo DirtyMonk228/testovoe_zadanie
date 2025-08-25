@@ -1,6 +1,8 @@
 #include "circle.h"
 
-Circle::Circle(int id):IShape(id) {}
+Circle::Circle(int id):IShape(id) {
+    setType("Circle");
+}
 
 
 void Circle::moveShape(QPoint move_point){
@@ -31,5 +33,15 @@ bool Circle::isPointInShape(QPoint point)const {
     double dy = point.y() - center.y();
 
     return (dx * dx) / (a * a) + (dy * dy) / (b * b) <= 1.0;
+}
+
+void Circle::serialize(QDataStream& out) const{
+    out<<getType()<<getId()<<first_point<<second_point;
+}
+
+void Circle::deserialize(QDataStream& in){
+    int id;
+    in>>id;setId(id);
+    in>>first_point>>second_point;
 }
 Circle::~Circle(){}

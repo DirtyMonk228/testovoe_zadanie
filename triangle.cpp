@@ -1,5 +1,7 @@
 #include "triangle.h"
-Triangle::Triangle(int id):IShape(id){}
+Triangle::Triangle(int id):IShape(id){
+    setType("Triangle");
+}
 
 void Triangle::moveShape(QPoint move_point){
     first_point+= move_point;
@@ -45,5 +47,15 @@ bool Triangle::isPointInShape(QPoint point)const{
 
     // Точка внутри треугольника, если u >= 0, v >= 0 и u + v <= 1
     return (u >= 0) && (v >= 0) && (u + v <= 1);
+}
+
+void Triangle::serialize(QDataStream& out) const{
+    out<<getType()<<getId()<<first_point<<second_point;
+}
+
+void Triangle::deserialize(QDataStream& in){
+    int id;
+    in>>id;setId(id);
+    in>>first_point>>second_point;
 }
 Triangle::~Triangle(){}
